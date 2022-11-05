@@ -46,7 +46,19 @@ const buildInsertQuery = (tableName, columns, values) => {
   if (columns.length !== values.length) {
     throw new Error('The number of items in columns and values have to be the same.')
   }
-  return `INSERT INTO ${tableName} (${columns.join(', ')}) VALUES (${values.map(value => `'${value}'`).join(', ')});`
+  const sqlValues = values.map(value => {
+    if (value === null) {
+      return 'NULL'
+    }
+
+    switch (typeof value) {
+      case 'number':
+        return `${value}`;
+      default:
+        return `'${value}'`;
+    }
+  })
+  return `INSERT INTO ${tableName} (${columns.join(', ')}) VALUES (${sqlValues.join(', ')});`
 }
 
 export const getTableArtifact = async (tablePrefix) => {
