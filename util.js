@@ -7,7 +7,7 @@ import { provider, tableland } from "./tableland.js";
   it will truncate that before finding the difference between the Tableland data and the data 
   in the script.
 */
-export const insertDifference = async (tableName, previousRows, columns, nextRows) => {
+export const insertDifference = async (tableName, previousRows, columns, nextRows, dryRun = false) => {
   if (nextRows.length < previousRows.length) {
     console.log("No new rows. This expects only new rows to be appended. Do not go back to edit the old ones.")
     return
@@ -29,6 +29,9 @@ export const insertDifference = async (tableName, previousRows, columns, nextRow
     ))
   console.log("Queries to be run...")
   queries.forEach((query) => console.log("\t", query))
+
+  if (dryRun) return
+
   try {
     console.log("Inserting data into Tableland...")
     const result = await tableland.write(queries.join(' '));
