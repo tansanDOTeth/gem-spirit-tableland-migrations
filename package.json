@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "seed:create-tables": "node create-tables.js",
-    "seed:insert-generations": "node insert-tables.js"
+    "seed:insert-generations": "node insert-generations.js"
   },
   "author": "",
   "license": "ISC",
