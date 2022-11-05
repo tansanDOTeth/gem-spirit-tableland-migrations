@@ -28,8 +28,7 @@ export const tables = [
     "schema": createSchema(
       [
         ['generation_id', SQL_TYPES_INTEGER],
-        ['stage_parent_id', SQL_TYPES_INTEGER],
-        ['level', SQL_TYPES_INTEGER],
+        ['stage_parent_id', SQL_TYPES_INTEGER]
       ]
     )
   },
