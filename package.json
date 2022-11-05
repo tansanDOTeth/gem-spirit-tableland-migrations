@@ -1,0 +1,17 @@
+{
+  "name": "tableland-node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed:create-tables": "node create-tables.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tableland/sdk": "^3.1.4",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.2.10"
+  },
+  "type": "module"
+}
