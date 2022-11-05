@@ -11,7 +11,7 @@ const { name: tableName } = tableArtifact;
 const result = await tableland.read(`SELECT * FROM ${tableName};`);
 await insertDifference(tableName, result.rows, ['name'], data)
 const newResult = await tableland.read(`SELECT * FROM ${tableName};`);
-console.log("New Tableland Result",)
+console.log("Latest Tableland Result",)
 newResult.rows.forEach((row) => console.log("\t", row))
 
 // Example of a delete
