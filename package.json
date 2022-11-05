@@ -6,7 +6,8 @@
   "scripts": {
     "seed:create-tables": "node create-tables.js",
     "seed:insert-generations": "node insert-generations.js",
-    "seed:insert-stages": "node insert-stages.js"
+    "seed:insert-stages": "node insert-stages.js",
+    "seed:insert-sprite-sheet-versions": "node insert-sprite-sheet-versions.js"
   },
   "author": "",
   "license": "ISC",
