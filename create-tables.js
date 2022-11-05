@@ -1,19 +1,10 @@
 import './fetch-polyfill.js';
 
-import * as dotenv from 'dotenv';
 import * as fs from 'fs';
 
-import { Wallet, providers } from "ethers";
+import { provider, tableland } from "./tableland.js";
 
-import { connect } from "@tableland/sdk";
 import { tables } from './tables.js';
-
-dotenv.config()
-
-const wallet = new Wallet(process.env.PRIVATE_KEY);
-const provider = new providers.AlchemyProvider(process.env.NETWORK, process.env.ALCHEMY_API_KEY);
-const signer = wallet.connect(provider);
-const tableland = await connect({ signer, network: "testnet", chain: `ethereum-${process.env.NETWORK}` });
 
 const { name: chainName } = await provider.getNetwork();
 const artifactsDirectory = `./artifacts/${chainName}`;
