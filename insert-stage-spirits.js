@@ -2,6 +2,12 @@ import { getTableArtifact, insertDifference } from './util.js';
 
 import { tableland } from "./tableland.js";
 
+const columns = [
+  'stage_id',
+  'spirit_id',
+  'stage_spirit_parent_id'
+];
+
 const STAGE_0_ID = 1;
 const STAGE_1_ID = 2;
 const STAGE_2_ID = 3;
@@ -17,7 +23,7 @@ const data = [
 const tableArtifact = await getTableArtifact('StageSpirits');
 const { name: tableName } = tableArtifact;
 const result = await tableland.read(`SELECT * FROM ${tableName};`);
-await insertDifference(tableName, result.rows, ['stage_id', 'spirit_id', 'stage_spirit_parent_id'], data)
+await insertDifference(tableName, result.rows, columns, data)
 const newResult = await tableland.read(`SELECT * FROM ${tableName};`);
 console.log("Latest Tableland Result")
 newResult.rows.forEach((row) => console.log("\t", row))
