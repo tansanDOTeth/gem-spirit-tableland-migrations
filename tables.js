@@ -38,6 +38,7 @@ export const tables = [
       [
         ['stage_id', SQL_TYPES_INTEGER],
         ['spirit_id', SQL_TYPES_INTEGER],
+        ['stage_spirit_parent_id', SQL_TYPES_INTEGER],
       ],
       {
         indexName: 'unique_spirit_per_stage',
