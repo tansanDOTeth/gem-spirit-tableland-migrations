@@ -1,1 +1,11 @@
-{"tableId":{"type":"BigNumber","hex":"0x0385"},"prefix":"SpriteAttributes","chainId":5,"txnHash":"0x314213496812acf344a5ecfb8f6cac3233b75e00be7a71198a9a2da99a723c68","blockNumber":7895297,"name":"SpriteAttributes_5_901"}
+{
+  "tableId": {
+    "type": "BigNumber",
+    "hex": "0x0385"
+  },
+  "prefix": "SpriteAttributes",
+  "chainId": 5,
+  "txnHash": "0x314213496812acf344a5ecfb8f6cac3233b75e00be7a71198a9a2da99a723c68",
+  "blockNumber": 7895297,
+  "name": "SpriteAttributes_5_901"
+}
