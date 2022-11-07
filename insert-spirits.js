@@ -4,7 +4,22 @@ import { tableland } from "./tableland.js";
 
 const SPRITE_SHEET_VERSION_ID = 1; // 16x16 sprite dimensions
 const data = [
-  ['https://analyzer.gemspirits.monster/static/media/choku.2e282c267596be1685a8.png', SPRITE_SHEET_VERSION_ID],
+  [
+    'https://analyzer.gemspirits.monster/sprite-sheets/01-00-00.png',
+    SPRITE_SHEET_VERSION_ID,
+  ],
+  [
+    'https://analyzer.gemspirits.monster/sprite-sheets/01-01-00.png',
+    SPRITE_SHEET_VERSION_ID,
+  ],
+  [
+    'https://analyzer.gemspirits.monster/sprite-sheets/01-02-00.png',
+    SPRITE_SHEET_VERSION_ID,
+  ],
+  [
+    'https://analyzer.gemspirits.monster/sprite-sheets/01-03-00.png',
+    SPRITE_SHEET_VERSION_ID,
+  ],
 ];
 
 const tableArtifact = await getTableArtifact('Spirits');
@@ -16,4 +31,4 @@ console.log("Latest Tableland Result")
 newResult.rows.forEach((row) => console.log("\t", row))
 
 // Example of a delete
-// const removeRes = await tableland.write(`DELETE FROM ${tableName} WHERE id = 0;`);
+// const removeRes = await tableland.write(`DELETE FROM ${tableName} WHERE id = 1;`);
