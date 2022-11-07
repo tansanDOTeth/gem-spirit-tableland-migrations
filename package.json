@@ -8,7 +8,8 @@
     "seed:insert-generations": "node insert-generations.js",
     "seed:insert-stages": "node insert-stages.js",
     "seed:insert-sprite-sheet-versions": "node insert-sprite-sheet-versions.js",
-    "seed:insert-spirits": "node insert-spirits.js"
+    "seed:insert-spirits": "node insert-spirits.js",
+    "seed:insert-stage-spirits": "node insert-stage-spirits.js"
   },
   "author": "",
   "license": "ISC",
