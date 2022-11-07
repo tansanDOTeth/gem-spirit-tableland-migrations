@@ -5,11 +5,12 @@ import { tableland } from "./tableland.js";
 const columns = [
   'sprite_width_px',
   'sprite_height_px',
-  'sprite_spacing_px'
+  'sprite_spacing_px',
+  'canvas_scale',
 ];
 
 const data = [
-  [16, 16, 2],
+  [16, 16, 2, 7],
 ];
 
 const tableArtifact = await getTableArtifact('SpriteSheetVersion');

@@ -71,6 +71,7 @@ export const tables = [
         ['sprite_width_px', SQL_TYPES_INTEGER],
         ['sprite_height_px', SQL_TYPES_INTEGER],
         ['sprite_spacing_px', SQL_TYPES_INTEGER],
+        ['canvas_scale', SQL_TYPES_INTEGER],
       ]
     )
   },
