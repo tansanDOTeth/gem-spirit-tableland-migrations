@@ -1,11 +1,1 @@
-{
-  "tableId": {
-    "type": "BigNumber",
-    "hex": "0x038f"
-  },
-  "prefix": "SpriteSheetVersion",
-  "chainId": 5,
-  "txnHash": "0x54af859efa27c402be7392a8481f55956930cf97664e6299ec3ba5d2a1e66ad4",
-  "blockNumber": 7908313,
-  "name": "SpriteSheetVersion_5_911"
-}
+{"tableId":{"type":"BigNumber","hex":"0x03a2"},"prefix":"SpriteSheetVersion","chainId":5,"txnHash":"0x1459adf796a079bdc05495f4d6bd61ccec65161a72e02a83df51f6d3c9a53de3","blockNumber":7955973,"name":"SpriteSheetVersion_5_930"}

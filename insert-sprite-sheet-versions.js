@@ -6,7 +6,7 @@ const columns = [
   'sprite_width_px',
   'sprite_height_px',
   'sprite_spacing_px',
-  'canvas_scale',
+  'sprite_scale',
 ];
 
 const data = [

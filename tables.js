@@ -28,7 +28,7 @@ export const tables = [
     "schema": createSchema(
       [
         ['generation_id', SQL_TYPES_INTEGER],
-        ['stage_parent_id', SQL_TYPES_INTEGER]
+        ['parent_stage_id', SQL_TYPES_INTEGER]
       ]
     )
   },
@@ -38,7 +38,7 @@ export const tables = [
       [
         ['stage_id', SQL_TYPES_INTEGER],
         ['spirit_id', SQL_TYPES_INTEGER],
-        ['stage_spirit_parent_id', SQL_TYPES_INTEGER],
+        ['parent_stage_spirit_id', SQL_TYPES_INTEGER],
       ],
       {
         indexName: 'unique_spirit_per_stage',
@@ -71,7 +71,7 @@ export const tables = [
         ['sprite_width_px', SQL_TYPES_INTEGER],
         ['sprite_height_px', SQL_TYPES_INTEGER],
         ['sprite_spacing_px', SQL_TYPES_INTEGER],
-        ['canvas_scale', SQL_TYPES_INTEGER],
+        ['sprite_scale', SQL_TYPES_INTEGER],
       ]
     )
   },

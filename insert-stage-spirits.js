@@ -5,7 +5,7 @@ import { tableland } from "./tableland.js";
 const columns = [
   'stage_id',
   'spirit_id',
-  'stage_spirit_parent_id'
+  'parent_stage_spirit_id'
 ];
 
 const STAGE_0_ID = 1;

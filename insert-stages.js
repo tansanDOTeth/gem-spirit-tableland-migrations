@@ -4,7 +4,7 @@ import { tableland } from "./tableland.js";
 
 const columns = [
   'generation_id',
-  'stage_parent_id'
+  'parent_stage_id'
 ];
 
 const FIRST_GEN = 1; // KIPPAN 0001
